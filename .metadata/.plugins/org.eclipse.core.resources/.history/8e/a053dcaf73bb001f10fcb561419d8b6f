@@ -1,0 +1,11 @@
+package practice;
+
+public class Practice {
+	public static void main(String[] args) {
+		Integer s1=123;
+		Integer s2=123;
+		
+	    System.out.println(Integer.toBinaryString(s1));
+	    System.out.println(Integer.toBinaryString(s1));
+	}
+}

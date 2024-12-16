@@ -1,0 +1,43 @@
+package com.pk.basics;
+
+import java.util.Scanner;
+import java.sql.*;
+
+public class JDBC_STUDENTLOGIN_APP {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		try {
+			System.out.println("***************wlcome  to student login/register page********************");
+			int choice=0;
+			do {
+				System.out.println("want to procced.......");
+				System.out.println("1.Login\n2.Register\n3.Exit");
+				System.out.print("Enter any number for procced:");
+				choice=sc.nextInt();
+				int rollNo=0;
+				String name=null;
+				double percentage=0.0;
+				String mailId=null;
+				long phNo=0;
+				switch(choice) {
+				case 1:{
+					System.out.print("Enter Student RollNo:");
+					
+					System.out.print("Enter Student Name:");
+				}
+				case 2:{
+					
+				}
+				case 3:{
+					
+				}
+				default : System.err.println("<<<You entered wrong choice>>>");
+				}
+				
+			}while(choice!=3);
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+}

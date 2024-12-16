@@ -1,0 +1,44 @@
+package com.pk.jdbc_tasks;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class JDBC_EMPLOYEE69_OPERATION {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		Scanner sc = new Scanner(System.in);
+		Class.forName("oracle.jdbc.driver.OracleDriver");
+
+		try (sc) {
+			Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "c##batch37", "PKP");
+			int choice = 0;
+			while (true) {
+				System.out.println("Meke One choice:");
+				System.out.println(" 1.AddEmployee\r\n" + "             2.ViewAllEmployees\r\n"
+						+ "             3.ViewEmployeeById\r\n"
+						+ "             4.UpdateEmployeeById(bSal,hra,da,totSal)\r\n"
+						+ "             5.DeleteEmployeeById\r\n" + "				6.exit");
+				switch (choice) {
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+				case 6: {
+					System.out.println("Thank you for our app!!!");
+					break;
+				}
+				default:
+					System.out.println("You entered a wrong choice.");
+				}
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

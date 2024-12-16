@@ -1,0 +1,17 @@
+package practice;
+
+public class Practice {
+	public static void main(String[] args) {
+		Integer s1=123;
+	
+		
+		String s3=Integer.toBinaryString(s1);
+		 
+		System.out.println(s3);
+	    char[] s4=s3.toCharArray();
+	    for(int i=0,j=s4.length-1;i<j;i++) {
+	    	if(s4[i]==s4[j])continue;
+	    	else System.out.println("flase");
+	    }
+	}
+}
