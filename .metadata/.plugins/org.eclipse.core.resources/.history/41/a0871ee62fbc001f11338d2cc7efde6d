@@ -1,0 +1,23 @@
+package com.jdbc.scrollable_nonscrollable;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class PRODUCT_APP_SCROLLABLE {
+
+	public static void main(String[] args) {
+		try {
+			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","c##batch37","PKP");
+			PreparedStatement ps1=con.prepareStatement("insert into product values(?,?,?,?)");
+			PreparedStatement ps2=con.prepareStatement("select * from product",ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

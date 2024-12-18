@@ -1,0 +1,16 @@
+package com.jdbc.multimedia_data_storing;
+
+import java.util.Scanner;
+
+public class storing_into_file {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		try(s;){
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+package com.jdbc.callableStatement;
+
+import java.util.Scanner;
+
+public  class STUDENT_APP_PROCEDURE {
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		try(s;){
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+		}catch(Exception e) {
+			
+		}
+	}
+}

@@ -1,0 +1,10 @@
+package com.jdbc.multimedia_data_storing;
+
+public class Retriving_storing_into_file {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
