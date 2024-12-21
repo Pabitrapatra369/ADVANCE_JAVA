@@ -1,0 +1,10 @@
+package com.jdbc.callableStatement;
+
+public class RETRIEVE_STUDENT_DETAILS69 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

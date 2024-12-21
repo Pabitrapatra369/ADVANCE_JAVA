@@ -1,9 +1,0 @@
-package com.pk.jdbc_tasks;
-
-public class JDBC_EMP_FILTERATION {
-
-	public static void main(String[] args) {
-
-	}
-
-}
