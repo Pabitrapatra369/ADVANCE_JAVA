@@ -1,5 +1,0 @@
-package com.jdbc.callableStatement;
-
-public sealed class STUDENT_APP_PROCEDURE {
-
-}
